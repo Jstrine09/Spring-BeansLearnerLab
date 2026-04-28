@@ -17,4 +17,13 @@ public class StudentConfig {
         new Student(3L, "Penny")
         );
     }
+
+    @Bean(name = "previousStudents")
+    public Students previousStudents() {
+        return new Students(
+        new Student(4L, "Raj"),
+        new Student(5L, "Howard"),
+        new Student(6L, "Bernadette")
+        );
+    }
 }
